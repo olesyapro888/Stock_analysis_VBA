@@ -8,7 +8,7 @@
   - [Comparing the execution times](#comparing-the-execution-times)
 - [Summary](#summary)
   - [The advantages and disadvantages of refactoring code in general](#the-advantages-and-disadvantages-of-refactoring-code-in-general)
-  - [The advantages and disadvantages of the original and refactored VBA script](#the-pros-and-cons-of-the-original-and-refactored-VBA-script)
+  - [The pros and cons of the original and refactored VBA script](#the-pros-and-cons-of-the-original-and-refactored-VBA-script)
 
 ## `Overview of Project`
 
@@ -46,10 +46,36 @@ b) To avoid copying the same lines 12 times to get the results of 12 stock by cr
 
 ![image](https://user-images.githubusercontent.com/68247343/124638446-f68f3200-de58-11eb-9ab9-8c3ba63a4886.png)
 
-![image](https://user-images.githubusercontent.com/68247343/124642276-a9fa2580-de5d-11eb-87ce-6c567a5bde45.png)
+  `'2b) Loop over all the rows in the spreadsheet.
+    For i = 2 To RowCount
+    
+  '3a) Increase volume for current ticker
+        tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
 
+  '3b) Check if the current row is the first row with the selected tickerIndex.
+        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
+            tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
+        End If
+        
+  '3c) check if the current row is the last row with the selected ticker
+        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+            tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+        End If
+        
+   '3d) If the next row’s ticker doesn’t match, increase the tickerIndex.
+        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+            tickerIndex = tickerIndex + 1
+        End If
+    Next i
+    '4) Loop through the arrays to output the Ticker, Total Daily Volume, and Return.
+    For i = 0 To 11
+       Cells(4 + i, 1).Value = tickers(i)
+       Cells(4 + i, 2).Value = tickerVolumes(i)
+       Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
+    Next i
+ `
 c) To run faster by refactoring formats of the outputs.
-![image](https://user-images.githubusercontent.com/68247343/124638639-2f2f0b80-de59-11eb-9b08-e9fc89ecc3f8.png)
+![image](https://user-images.githubusercontent.com/68247343/124643203-cd71a000-de5e-11eb-84e3-4da9dc887753.png)
 
 ## `Summary`
 
