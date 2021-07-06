@@ -16,7 +16,7 @@ In the prepared workbook for Steve, he can analyze an entire dataset at the clic
 
 ## `Results`
 
-### Comparing the stock performance
+### `Comparing the stock performance`
 
 Based on analysed data to compare the stock performance between 2017 and 2018 there are few things.
 Firstly, the 2017 was the most successful year for all markets except TERP which lost about 7% of their cost.
@@ -27,9 +27,9 @@ Also, that is evidence that for DQ the biggest success in 2017 with almost 200% 
 
 Additionally, the riskiest with high volunteering is SPWR. They earned less in the successful year and lost more than average in the collapsed year.
 
-Furthermore, in 2017 and 2018 the most failed is TERP and on the contrary the most successful is RUN which returned 84% (the difference in price between the beginning of the year and the end of the year) in the collapsed year. 
+Furthermore, in 2017 and 2018 the most failed is TERP and on the contrary the most successful is RUN which returned 84% (the difference in price between the beginning of the year and the end of the year) in the collapsed year.
 
-### Comparing the execution times
+### `Comparing the execution times`
 
 To compare the execution times of the original script and the refactored script that is evidance that by refactoring the code, the script run faster. Let's visualize it. In 2017 the refactored script ran faster than original about in 0.71 sec and 0.76 in 2018.
 
@@ -47,15 +47,15 @@ b) To avoid copying the same lines 12 times to get the results of 12 stock by cr
 ![image](https://user-images.githubusercontent.com/68247343/124638446-f68f3200-de58-11eb-9ab9-8c3ba63a4886.png)
 
 ![image](https://user-images.githubusercontent.com/68247343/124644141-eb8bd000-de5f-11eb-80c2-8347c6303de8.png)
- 
-c) To run faster by refactoring formats of the outputs.
+
+c) To run faster and easier to read by refactoring formats of the outputs.
 ![image](https://user-images.githubusercontent.com/68247343/124643203-cd71a000-de5e-11eb-84e3-4da9dc887753.png)
 
 ## `Summary`
 
 ### `The advantages and disadvantages of refactoring code in general`
 
-The advantage of refactoring code is making the code more efficient by taking less steps, using less memory, improving the logic to make it easier to read, and overall, easy to maintain. 
+The advantage of refactoring code is making the code more efficient by taking less steps, using less memory, improving the logic to make it easier to read, and overall, easy to maintain.
 The disadvantages of refactoring code are it can be time consuming, and it can make some errors that influence the run code.
 
 ### `The pros and cons of the original and refactored VBA script`
