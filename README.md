@@ -37,7 +37,7 @@ To compare the execution times of the original script and the refactored script 
 
 ![2018_runtime](./Resources/VBA_Challenge_2018.png)
 
-To refactor the original script was changed as:
+To refact the original script was changed for:
 
 a) Easy to read
 ![image](https://user-images.githubusercontent.com/68247343/124638287-c6e02a00-de58-11eb-8b66-6e398dfdf783.png)
@@ -46,19 +46,20 @@ b) To avoid copying the same lines 12 times to get the results of 12 stock by cr
 
 ![image](https://user-images.githubusercontent.com/68247343/124638446-f68f3200-de58-11eb-9ab9-8c3ba63a4886.png)
 
+![image](https://user-images.githubusercontent.com/68247343/124642276-a9fa2580-de5d-11eb-87ce-6c567a5bde45.png)
+
 c) To run faster by refactoring formats of the outputs.
 ![image](https://user-images.githubusercontent.com/68247343/124638639-2f2f0b80-de59-11eb-9b08-e9fc89ecc3f8.png)
-
 
 ## `Summary`
 
 ### `The advantages and disadvantages of refactoring code in general`
 
-The advantage of refactoring code is it makes the code more efficient by taking less steps, using less memory, improving the logic to make it easier to read, and overall, it is easier to maintain. 
+The advantage of refactoring code is making the code more efficient by taking less steps, using less memory, improving the logic to make it easier to read, and overall, easy to maintain. 
 The disadvantages of refactoring code are it can be time consuming, and it can make some errors that influence the run code.
 
 ### `The pros and cons of the original and refactored VBA script`
 
 As cons, it can be time consuming of refactoring process.
 
-As pros, it is the execution times of the refactored script run faster than the original script with the same outputs for 2017 and 2018. As well as organised code is easier to maintain and to expand to new functionality.
+As pros, it is the execution times of the refactored script run faster than the original script with the same outputs for 2017 and 2018 respectively. As well as well organised code is easier to maintain and to expand to new functionality.
