@@ -46,34 +46,8 @@ b) To avoid copying the same lines 12 times to get the results of 12 stock by cr
 
 ![image](https://user-images.githubusercontent.com/68247343/124638446-f68f3200-de58-11eb-9ab9-8c3ba63a4886.png)
 
-  `'2b) Loop over all the rows in the spreadsheet.
-    For i = 2 To RowCount
-    
-  '3a) Increase volume for current ticker
-        tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
-
-  '3b) Check if the current row is the first row with the selected tickerIndex.
-        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
-            tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
-        End If
-        
-  '3c) check if the current row is the last row with the selected ticker
-        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
-            tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
-        End If
-        
-   '3d) If the next row’s ticker doesn’t match, increase the tickerIndex.
-        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
-            tickerIndex = tickerIndex + 1
-        End If
-    Next i
-    '4) Loop through the arrays to output the Ticker, Total Daily Volume, and Return.
-    For i = 0 To 11
-       Cells(4 + i, 1).Value = tickers(i)
-       Cells(4 + i, 2).Value = tickerVolumes(i)
-       Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
-    Next i
- `
+![image](https://user-images.githubusercontent.com/68247343/124644141-eb8bd000-de5f-11eb-80c2-8347c6303de8.png)
+ 
 c) To run faster by refactoring formats of the outputs.
 ![image](https://user-images.githubusercontent.com/68247343/124643203-cd71a000-de5e-11eb-84e3-4da9dc887753.png)
 
