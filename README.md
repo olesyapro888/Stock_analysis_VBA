@@ -4,9 +4,11 @@
 
 - [Overview](#overview-of-project)
 - [Results](#results)
-  - [ComparingStock](#Comparing-the-stock-performance)
-  - [ComparingTimes](#Comparing-the-execution-times)
+  - [Comparing the stock performance](#Comparing-the-stock-performance)
+  - [Comparing the execution times](#Comparing-the-execution-times)
 - [Summary](#summary)
+  - [The advantages and disadvantages of refactoring code in general](#The-advantages-and-disadvantages-of-refactoring-code-in-general)
+  - [The advantages and disadvantages of the original and refactored VBA script](#The-advantages-and-disadvantages-of-the-original-and-refactored VBA-script)
 
 ## `Overview of Project`
 
@@ -25,22 +27,38 @@ Also, that is evidence that for DQ the biggest success in 2017 with almost 200% 
 
 Additionally, the riskiest with high volunteering is SPWR. They earned less in the successful year and lost more than average in the collapsed year.
 
-Furthermore, in 2017 and 2018 the most failed is TERP and on the contrary the most successful is RUN which returned 84% in the collapsed year. 
+Furthermore, in 2017 and 2018 the most failed is TERP and on the contrary the most successful is RUN which returned 84% (the difference in price between the beginning of the year and the end of the year) in the collapsed year. 
 
 ### Comparing the execution times
 
-To compare the execution times of the original script and the refactored script that is evidance that by refactoring the code, the script run faster. Let's visualize it.
+To compare the execution times of the original script and the refactored script that is evidance that by refactoring the code, the script run faster. Let's visualize it. In 2017 the refactored script ran faster than original about in 0.71 sec and 0.76 in 2018.
 
 ![2017_runtime](./Resources/VBA_Challenge_2017.png)
 
 ![2018_runtime](./Resources/VBA_Challenge_2018.png)
 
+To refactor the original script was changed as:
+
+a) Easy to read
+![image](https://user-images.githubusercontent.com/68247343/124638287-c6e02a00-de58-11eb-8b66-6e398dfdf783.png)
+
+b) To avoid copying the same lines 12 times to get the results of 12 stock by creating arrays and loop over it.
+
+![image](https://user-images.githubusercontent.com/68247343/124638446-f68f3200-de58-11eb-9ab9-8c3ba63a4886.png)
+
+c) To run faster by refactoring formats of the outputs.
+![image](https://user-images.githubusercontent.com/68247343/124638639-2f2f0b80-de59-11eb-9b08-e9fc89ecc3f8.png)
+
+
 ## `Summary`
 
-### a.
+### `The advantages and disadvantages of refactoring code in general`
 
-What are the advantages or disadvantages of refactoring code? (to avoid copying the same lines 12 times to get the results of 12 stock ). There is a detailed statement on the advantages and disadvantages of refactoring code in general.
+The advantage of refactoring code is it makes the code more efficient by taking less steps, using less memory, improving the logic to make it easier to read, and overall, it is easier to maintain. 
+The disadvantages of refactoring code are it can be time consuming, and it can make some errors that influence the run code.
 
-### b.
+### `The advantages and disadvantages of the original and refactored VBA script`
 
-! How do these pros and cons apply to refactoring the original VBA script? There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script.
+As cons, it can be time consuming of refactoring process.
+
+As pros, it is the execution times of the refactored script run faster than the original script with the same outputs for 2017 and 2018. As well as organised code is easier to maintain and to expand to new functionality.
