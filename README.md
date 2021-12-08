@@ -1,4 +1,4 @@
-# STOCK-ANALYSIS
+# STOCK-ANALYSIS. The project 2 of UofT.
 
 ## `-Indice-`
 
@@ -12,7 +12,11 @@
 
 ## `Overview of Project`
 
-In the prepared workbook for Steve, he can analyze an entire dataset at the click of a button. Now, he wants to expand the dataset to include the entire stock market over the last few years and he is wondering how much time it takes to calculate data for one year. So, the purpose of the project is to compare 12 stock performances in 2017 and 2018 as well as refactor code to improve runtime of calculation.
+The purpose of the project is to compare 12 stock performances in 2017 and 2018 as well as refactor code to improve runtime of calculation.
+The tasks are:
+- to analyze an entire dataset at the click of a button,
+- to expand the datase to include the entire stock market over the last few years,
+- to calculate time to execute the code.
 
 ## `Results`
 
@@ -39,7 +43,7 @@ To compare the execution times of the original script and the refactored script 
 
 To refact the original script was changed for:
 
-a) Easy to read
+a) Easy to read.
 ![image](https://user-images.githubusercontent.com/68247343/124638287-c6e02a00-de58-11eb-8b66-6e398dfdf783.png)
 
 b) To avoid copying the same lines 12 times to get the results of 12 stock by creating arrays and loop over it.
