@@ -1,5 +1,4 @@
-# STOCK-ANALYSIS. The project 2 of UofT.
-
+# STOCK-ANALYSIS BY USING VBA
 ## `-Indice-`
 
 - [Overview](#overview-of-project)
