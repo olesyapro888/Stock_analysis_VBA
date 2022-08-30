@@ -1,4 +1,4 @@
-# STOCK-ANALYSIS BY USING VBA
+# Technical stock analysis using VBA
 ## `-Indice-`
 
 - [Overview](#overview-of-project)
